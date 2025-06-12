@@ -86,7 +86,17 @@ const Users = () => {
   return (
     <>
       {loading ? (
-        <InfinitySpin width="1000" color="#4fa94d" />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            minHeight: "60vh",
+            width: "100%",
+          }}
+        >
+          <InfinitySpin width="200" color="#1976d2" />
+        </Box>
       ) : (
         <>
           <h1 style={{ textAlign: "left", marginBottom: 16, marginTop:'20px'}}>User Management</h1>
